@@ -1,6 +1,4 @@
 import React, { useState, useRef } from "react";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import html2canvas from "html2canvas";
 
@@ -70,7 +68,12 @@ export default function VintagePhotoBooth() {
           </select>
         </label>
 
-        <Button onClick={handleDownload}>Download Strip</Button>
+        <button
+          onClick={handleDownload}
+          className="px-4 py-2 bg-black text-white rounded shadow hover:bg-gray-800"
+        >
+          Download Strip
+        </button>
       </div>
 
       <textarea
